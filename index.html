@@ -2,11 +2,56 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <style>
+            * {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            .case{
+                border: 3px dashed yellowgreen;
+                background-color: aquamarine;
+                margin: auto;
+                width: 25%;
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: 30px;
+            }
+            .header{
+                background-color: rgb(72, 160, 72);
+                margin: 0;
+                height: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .prki{
+                margin: 15px auto  15px auto ;
+                display: flex;
+                flex-direction: column;
+            }
+            .lrki{
+                margin: 15px 0px 0px auto;
+                display: flex;
+                flex-direction: column;
+            }
+            a{
+                background-color: green;
+                margin-bottom: 15px;
+            }
+    </style>
     </head>
     <body>
-        <div class="html_entities">
-            <a href="https://andrianhaliuk.github.io/laba2/lab2.html">LABA2</a>
-            <a href="https://andrianhaliuk.github.io/pr1.html">PR1</a>
+    <header class="header">
+        <h1>Портфоліо</h1>
+    </header>
+
+        <div class="case">
+            <div class="lrki">
+                <a href="https://andrianhaliuk.github.io/laba2/lab2.html">LABA2</a>
+ 
+            </div>
+            <div class="prki">
+                <a href="https://andrianhaliuk.github.io/pr1.html">PR1</a>
+            </div>
         </div>
     </body>
 </html>
