@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: #eee;
+}
+
+.main{
+    margin: 100px auto 0;
+    width: 1420px;
+    height: 900px;
+    display: flex;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+}
+
+.left-container{
+    width: 720px;
+    height: 900px;
+    background-image: url("back.jpg");
+}
+
+.right-container{
+    width: 720px;
+    height: 900px;
+    background-color: white;
+}
+
+.right-form-wrapper{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.top-caption{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-caption::before{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 200px;
+    height: 0px;
+    border: 1px solid #3C42571F;
+    left: -220px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top-caption::after{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 200px;
+    height: 0px;
+    border: 1px solid #3C42571F;
+    right: -220px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.paypal-button{
+    margin-bottom: 10px;
+}
+
+form{
+    width: 386px;
+    padding-top: 36px;
+}
+
+.input{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #CACACA;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+    margin-bottom: 40px;
+}
+.inputs{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #CACACA;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+}
+
+.half-input{
+    height: 30px;
+    width: 191px;
+    border: 1px solid #CACACA;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+} 
+
+fieldset{
+    border: 0;
+    height: 60px;
+    margin-bottom: 40px;
+}
+.main-button{
+    background-color: #03A9F4; 
+    color: #FFFFFF; 
+    border: 1px solid #cccccc;
+    width: 384px;
+    height: 34px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-family: "Gilroy-Medium";
+    box-shadow: 2px 4px 6px #4F4F4F26;
+    margin-top: 36px;
+}
+.labels{
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+    color: #8791a3;
+}
+.return{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Gilroy-Regular";
+    font-size: 25px;
+    margin-top: 300px;
+}

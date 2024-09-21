@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: #eee;
+}
+
+.main{
+    margin: 100px auto 0;
+    width: 1420px;
+    height: 900px;
+    display: flex;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+}
+
+.left-container{
+    width: 720px;
+    height: 900px;
+    background-image: url("back.jpg");
+}
+
+.right-container{
+    width: 720px;
+    height: 900px;
+    background-color: white;
+    position: relative;
+}
+
+.left-button-wrapper{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.sign-up-button{
+    background-color: white; 
+    color: #707070; 
+    border: 1px solid #cccccc;
+    width: 384px;
+    height: 34px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-family: "Gilroy-Medium";
+    box-shadow: 2px 4px 6px #4F4F4F26;
+}
+
+.sign-up-button:hover{
+    background-color: #dadada; 
+}
+
+.right-caption-wrapper{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-caption{
+    font-family: "Gilroy-Bold";
+    letter-spacing: 7px;
+    font-size: 45px;
+    color: #4F4F4F;
+}
+
+.sub-caption{
+    font-family: "Gilroy-Medium";
+    font-size: 25px;
+    color: #4F4F4FCC;
+}
+
+form{
+    display: block;
+    width: 385px;
+    padding-top: 36px;
+}
+
+.labels{
+    font-family: "Gilroy-Regular";
+    font-size: 14px;
+    color: #4F4F4F;
+    
+}
+
+.inputs{
+    height: 30px;
+    width: 385px;
+    margin-bottom: 36px;
+    border: 1px solid #CACACA;
+    box-shadow: 2px 4px 6px #4F4F4F26;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.checkbox-label{
+    width: 403px;
+    height: 30px;
+    font-family: "Gilroy-Regular";
+    font-size: 12px;
+    color: #4F4F4F;
+}
+.submit-button{
+    background-color: #03A9F4; 
+    color: #FFFFFF; 
+    border: 1px solid #cccccc;
+    width: 384px;
+    height: 34px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-family: "Gilroy-Medium";
+    box-shadow: 2px 4px 6px #4F4F4F26;
+    margin-top: 36px;
+}
+.symbols{
+    position: absolute;
+    top: 764px;
+}
+.sec-symbols{
+    position: absolute;
+    left: 560px;
+}
+
+.next{
+    position: absolute;
+    color: white;
+    font-family: "Gilroy-Regular";
+    font-size: 18px;
+    margin-top: 300px;
+}
+

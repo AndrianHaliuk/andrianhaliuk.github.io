@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main class="main">
+        <section class="left-container">
+            <a class="return" href="PR1.html"><-Previous page</a>
+        </section>
+        <section class="right-container">
+            <div class="right-form-wrapper">
+                <button class="main-button" type="button">Pay with PayPal</button>
+                <div class="top-caption">Or pay with card</div>
+                <form action="#" method="get" autocomplete="on">
+                    <label class="labels" for="email">Email</label>
+                    <input class="input" type="text" name="email" required>
+                    <label class="labels" for="pass">Country of region</label>
+                    <fieldset name="pass">
+                        <input class="inputs" type="text" placeholder="1234 1234 1234 1234" required>
+                        <input class="half-input" type="text" placeholder="MM / YY" required>
+                        <input class="half-input second-half-input" type="text" placeholder="CVC" required>
+                    </fieldset>
+                    <label class="labels" for="card-name">Name on card</label>
+                    <input class="input" type="text" name="card-name" required>
+                    <input class="main-button" type="submit" value="Pay">
+                </form>
+            </div>
+        </section>   
+    </main>
+</body>
+</html>
