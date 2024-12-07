@@ -139,7 +139,7 @@
 
 header {
   position: relative;
-  background-image: url("../img/header-back.webp");
+  background-image: none;
   background-position: center;
   background-size: cover;
   height: 735px;
@@ -156,6 +156,10 @@ header::after {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+body[data-loaded=true] header {
+  background-image: url("../img/header-back.webp");
 }
 
 .title {
@@ -284,7 +288,7 @@ h2 {
 
 .video-container {
   position: relative;
-  width: 480px;
+  max-width: 480px;
   height: 578px;
   border-radius: 20px;
   overflow: hidden;
@@ -696,8 +700,8 @@ footer .container h3 {
 }
 
 .subscribe {
-  width: 544px;
-  height: 208px;
+  max-width: 544px;
+  min-height: 208px;
 }
 .subscribe button {
   height: 64px;
@@ -1155,6 +1159,14 @@ footer .container h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .event-text h3 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 8px;
+  }
+  .video-container {
+    padding-top: 24px;
+  }
   .what-we-do-title img {
     width: 100%;
     padding: 10px;
@@ -1244,8 +1256,10 @@ footer .container h3 {
     border-radius: 20px;
   }
   header {
+    background-image: -webkit-image-set(url("../img/header-back-480w.webp") 1x, url("../img/header-back-1080w.webp") 2x);
+    background-image: image-set(url("../img/header-back-480w.webp") 1x, url("../img/header-back-1080w.webp") 2x);
     height: auto;
-    padding-bottom: 8px;
+    padding: 60px 0 8px 0;
   }
   .title {
     margin-left: 12px;
@@ -1256,11 +1270,12 @@ footer .container h3 {
     padding-right: 10px;
   }
   .sub-title {
-    margin: 12px auto;
+    margin: 36px auto;
     padding-left: 10px;
   }
   .sub-title p {
     font-size: 12px;
+    white-space: wrap;
   }
   .section {
     margin-left: -10px;
@@ -1345,11 +1360,10 @@ footer .container h3 {
     height: auto;
   }
   footer .container {
-    width: 480px;
     height: auto;
     flex-direction: column;
     padding: 20px;
-    margin: 0 auto;
+    margin: 24px auto;
   }
   footer .container a, footer .container .footer-lists {
     margin-bottom: 20px;

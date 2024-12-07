@@ -127,7 +127,7 @@
 
 header{
   position: relative;
-  background-image: url("../img/header-back.webp");
+  background-image: none;
   background-position: center;
   background-size: cover;
   height: 735px;
@@ -145,7 +145,9 @@ header{
     z-index: -1;
   }
 }
-
+body[data-loaded="true"] header {
+  background-image: url("../img/header-back.webp");
+}
 .title{
   max-width: 640px;
   width: 100%;
@@ -270,7 +272,7 @@ h2{
 
 .video-container {
   position: relative;
-  width: 480px;
+  max-width: 480px;
   height: 578px;
   border-radius: 20px;
   overflow: hidden;
@@ -644,8 +646,8 @@ footer .container{
   width: 100%;
 }
 .subscribe{
-   width: 544px;
-   height: 208px;
+   max-width: 544px;
+   min-height: 208px;
    button{
     height: 64px;
    }
@@ -1055,6 +1057,14 @@ footer .container{
   margin: 0px 0px 73px 96px;
 }
 @media screen and (max-width:768px){
+  .event-text h3{
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 8px;
+  }
+  .video-container{
+    padding-top: 24px;
+  }
   .what-we-do-title img{
     width: 100%;
     padding: 10px;
@@ -1146,8 +1156,12 @@ footer .container{
     }
   }
   header{
+    background-image: image-set(
+      url('../img/header-back-480w.webp') 1x,
+      url('../img/header-back-1080w.webp') 2x
+    );
     height: auto;
-    padding-bottom: 8px;
+    padding: 60px 0 8px 0;
   }
   .title{
     margin-left: 12px;
@@ -1158,10 +1172,11 @@ footer .container{
     }
   }
   .sub-title{
-    margin: 12px auto;
+    margin: 36px auto;
     padding-left: 10px;
     p{
     font-size: 12px;
+    white-space: wrap;
     }
   }
   .section{
@@ -1254,11 +1269,10 @@ footer .container{
   }
 
   footer .container{
-    width: 480px;
     height: auto;
     flex-direction: column;
     padding: 20px;
-    margin: 0 auto;
+    margin: 24px auto;
     a, .footer-lists{
       margin-bottom: 20px;
     }

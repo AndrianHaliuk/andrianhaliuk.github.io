@@ -115,3 +115,7 @@ fetch('json/news.json')
     });
   })
   .catch(error => console.error('Error loading JSON:', error));
+
+  window.addEventListener("load", () => {
+    document.body.setAttribute("data-loaded", "true");
+  });
