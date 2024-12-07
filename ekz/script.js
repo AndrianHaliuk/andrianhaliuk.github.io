@@ -6,7 +6,7 @@ input.addEventListener('blur', () => {
         input.classList.add('green');
         input.classList.remove('red');
     } else {
-        input.classList.add('green');
-        input.classList.remove('red');
+        input.classList.add('red');
+        input.classList.remove('green');
     }
 });
