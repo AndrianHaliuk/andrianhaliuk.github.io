@@ -133,17 +133,16 @@ header{
   height: 735px;
   z-index: 1;
   padding-top: 128px;
-  margin-top: 67px;
-  margin-bottom: 96px;
+  margin: 67px 0 96px 0;
   &::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6); 
     width: 100%;
     height: 100%;
-    z-index: -2;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
   }
 }
 
@@ -198,8 +197,9 @@ header{
 .section-title{
   margin-left: 10px;
   max-width: 704px;
+  padding-top: 60px;
  h2{
-  margin: 24px 0px 0px 96px;
+  margin: 32px 0px 0px 96px;
   }
   p{
   margin: 30px 0px 0px 96px;
@@ -208,7 +208,7 @@ header{
   color: #525560;
   }
   .primary-btn{
-    margin: 40px 0px 0px 96px;
+    margin: 48px 0px 0px 96px;
   }
 }
 
@@ -239,7 +239,7 @@ h2{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  img{
+  .kid{
     border-radius: 20px;
     object-fit: cover;
     margin-left: 100px;
@@ -268,11 +268,31 @@ h2{
   }
 }
 
-.about-us-video{
+.video-container {
+  position: relative;
   width: 480px;
   height: 578px;
-  border-radius:20px;
+  border-radius: 20px;
+  overflow: hidden;
 }
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.playicon-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
 
 .supporters{
   display: flex;
