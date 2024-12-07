@@ -1,0 +1,12 @@
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+#numberInput{
+    margin: 20px;
+    width: 200px;
+}
